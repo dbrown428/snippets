@@ -1,4 +1,13 @@
 {
+	"For Comprehension": {
+		"prefix": "for",
+		"body": [
+			"for {",
+			"  _ <- ???",
+			"  _ <- ???",
+			"} yield ()"
+		],
+	},
 	"ZIO Test Suite": {
 		"prefix": "zioTestSuite",
 		"include": [
@@ -21,5 +30,5 @@
 			"  assertTrue(${2:false})",
 			"},"
 		],
-	}
+	},
 }
