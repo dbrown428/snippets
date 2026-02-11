@@ -1,0 +1,25 @@
+{
+	"ZIO Test Suite": {
+		"prefix": "zioTestSuite",
+		"include": [
+			"**/*Tests.scala"
+		],
+		"body": [
+			"object ${1:${TM_FILENAME_BASE}} extends TestSuite {",
+			"  def spec = suite(\"${2:${TM_FILENAME_BASE}}\")(",
+			"    test(\"${3:TODO:}\") {",
+			"      assertTrue(${4:false})",
+			"    },",
+			"  )",
+			"}"
+		],
+	},
+	"ZIO Test": {
+		"prefix": "zioTest",
+		"body": [
+			"test(\"${1:TODO:}\") {",
+			"  assertTrue(${2:false})",
+			"},"
+		],
+	}
+}
